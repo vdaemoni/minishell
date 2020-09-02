@@ -6,7 +6,7 @@
 /*   By: vdaemoni <vdaemoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/19 17:06:41 by vdaemoni          #+#    #+#             */
-/*   Updated: 2020/08/24 16:07:31 by vdaemoni         ###   ########.fr       */
+/*   Updated: 2020/09/02 18:45:49 by vdaemoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ char		**execute(char **args, char **data, char *name)
 	i = -1;
 	if (!args || !*args || !**args)
 		return (data);
-	while (++i < 9)
+	while (++i < 8)
 		if (!ft_strcmp(args[0], blt_str(i)))
 			return ((*blt_func(i))(args, data, name));
 	if (access(args[0], F_OK) != -1)

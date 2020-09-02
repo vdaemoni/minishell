@@ -6,7 +6,7 @@
 #    By: vdaemoni <vdaemoni@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/08/24 16:14:45 by vdaemoni          #+#    #+#              #
-#    Updated: 2020/08/24 18:34:40 by vdaemoni         ###   ########.fr        #
+#    Updated: 2020/08/27 17:14:40 by vdaemoni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,15 +14,15 @@ NAME	=	minishell
 
 SRC		=	src/main.c \
 			src/blt.c \
-			src/base/cmd_cd.c \
-			src/base/cmd_echo.c \
-			src/base/cmd_env.c \
-			src/base/cmd_exit.c \
-			src/base/cmd_help.c \
-			src/base/cmd_pwd.c \
-			src/base/cmd_setenv.c \
-			src/base/cmd_unsetenv.c \
-			src/base/cmd_squirtle.c \
+			src/builtins/cmd_cd.c \
+			src/builtins/cmd_echo.c \
+			src/builtins/cmd_env.c \
+			src/builtins/cmd_exit.c \
+			src/builtins/cmd_help.c \
+			src/builtins/cmd_pwd.c \
+			src/builtins/cmd_setenv.c \
+			src/builtins/cmd_unsetenv.c \
+			src/tricky.c \
 			src/execute.c \
 			src/minishell.c \
 			src/helpers/ft_bzero.c \

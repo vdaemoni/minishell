@@ -5,16 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: vdaemoni <vdaemoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/05/15 17:08:37 by jaleman           #+#    #+#             */
-/*   Updated: 2020/08/17 18:36:10 by vdaemoni         ###   ########.fr       */
+/*   Created: 2020/08/30 15:06:03 by vdaemoni          #+#    #+#             */
+/*   Updated: 2020/08/30 15:06:04 by vdaemoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "helpers.h"
-
-/*
-** Return the number of entries in a table
-*/
 
 size_t		ft_tablen(char **tab)
 {

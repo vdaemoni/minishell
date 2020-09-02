@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: vdaemoni <vdaemoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/03 21:15:41 by jaleman           #+#    #+#             */
-/*   Updated: 2020/08/17 18:32:24 by vdaemoni         ###   ########.fr       */
+/*   Created: 2020/08/30 15:03:01 by vdaemoni          #+#    #+#             */
+/*   Updated: 2020/09/02 18:45:44 by vdaemoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ void	ft_error(int err, char *exe, char *msg)
 {
 	ft_putstr(exe);
 	ft_putchar(':');
+	ft_putchar(' ');
 	ft_putendl(msg);
 	return (exit(err));
 }

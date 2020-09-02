@@ -6,7 +6,7 @@
 /*   By: vdaemoni <vdaemoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 16:25:15 by vdaemoni          #+#    #+#             */
-/*   Updated: 2020/08/19 17:05:30 by vdaemoni         ###   ########.fr       */
+/*   Updated: 2020/09/02 18:56:35 by vdaemoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ static char	**run_cmd(char **commands, char **data, char *name)
 		while (args[++i])
 			free(args[i]);
 		(args) ? free(args) : 0;
+		i = -1;
 	}
 	return (data);
 	(void)name;
@@ -61,10 +62,12 @@ static void	set_dir(char **data, char *name)
 
 int			minishell(char **data, char *name)
 {
+	int		i;
 	int		status;
 	char	*line;
 	char	**commands;
 
+	i = 0;
 	status = 1;
 	while (status)
 	{
@@ -77,5 +80,6 @@ int			minishell(char **data, char *name)
 		free(commands);
 		free(line);
 	}
+	ft_putendl("Bye :)");
 	return (status);
 }
