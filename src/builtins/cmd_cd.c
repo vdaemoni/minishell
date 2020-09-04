@@ -6,7 +6,7 @@
 /*   By: vdaemoni <vdaemoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/24 18:36:34 by vdaemoni          #+#    #+#             */
-/*   Updated: 2020/09/02 18:34:03 by vdaemoni         ###   ########.fr       */
+/*   Updated: 2020/09/04 17:54:02 by vdaemoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ static void	access_dir(char **data, char *path)
 	if (!(access(path, F_OK) == -1))
 	{
 		lstat(path, &stst);
-		if (S_ISDIR(stst.st_mode) && !(access(path, R_OK) != -1))
+		if (S_ISDIR(stst.st_mode) && !(stst.st_mode & S_IXUSR))
 			msg("cd: permission denied: ", path);
 		else if (!S_ISDIR(stst.st_mode))
 			msg("cd: not a directory: ", path);

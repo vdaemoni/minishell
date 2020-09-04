@@ -6,7 +6,7 @@
 /*   By: vdaemoni <vdaemoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/16 16:49:47 by vdaemoni          #+#    #+#             */
-/*   Updated: 2020/08/17 16:20:27 by vdaemoni         ###   ########.fr       */
+/*   Updated: 2020/09/04 19:00:43 by vdaemoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,8 @@ int			main(int argc, char **argv, char **envp, char **apple)
 	char **data;
 
 	data_init(&data, envp);
-	return (minishell(data, argv[0]));
+	return (minishell(data, "./minishell"));
+	(void)argv;
 	(void)argc;
 	(void)apple;
 }
