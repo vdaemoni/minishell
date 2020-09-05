@@ -6,7 +6,7 @@
 /*   By: vdaemoni <vdaemoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 17:43:51 by vdaemoni          #+#    #+#             */
-/*   Updated: 2020/08/17 18:38:27 by vdaemoni         ###   ########.fr       */
+/*   Updated: 2020/09/05 16:17:10 by vdaemoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,6 @@ void	ft_bzero(void *s, size_t n);
 void	ft_error(int err, char *exe, char *msg);
 void	ft_strclr(char *s);
 void	ft_tabfree(char **tab);
+void	ft_putnbr(int nb);
 
 #endif

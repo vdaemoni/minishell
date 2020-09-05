@@ -6,7 +6,7 @@
 /*   By: vdaemoni <vdaemoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 16:25:15 by vdaemoni          #+#    #+#             */
-/*   Updated: 2020/09/02 18:56:35 by vdaemoni         ###   ########.fr       */
+/*   Updated: 2020/09/05 16:48:31 by vdaemoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,7 @@ int			minishell(char **data, char *name)
 
 	i = 0;
 	status = 1;
+	cmd_help(NULL, data, NULL);
 	while (status)
 	{
 		ft_putstr("$> ");

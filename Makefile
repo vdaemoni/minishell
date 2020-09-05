@@ -6,7 +6,7 @@
 #    By: vdaemoni <vdaemoni@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/08/24 16:14:45 by vdaemoni          #+#    #+#              #
-#    Updated: 2020/08/27 17:14:40 by vdaemoni         ###   ########.fr        #
+#    Updated: 2020/09/05 16:17:34 by vdaemoni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,6 +50,7 @@ SRC		=	src/main.c \
 			src/helpers/ft_strtok.c \
 			src/helpers/ft_tabfree.c \
 			src/helpers/ft_tablen.c \
+			src/helpers/ft_putnbr.c \
 			src/helpers/get_next_line.c
 
 INC		=	inc/
